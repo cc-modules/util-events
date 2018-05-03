@@ -1,9 +1,9 @@
 module.exports = {
   /**
    * Helper function to emit events
-   * @param {String|cc.Component.EventHanlder} events 
+   * @param {String|cc.Component.EventHanlder} events
    */
-  $emitEvents(events) {
+  emitEvents(events) {
     var e = events;
     if (typeof events === 'string') {
       e = this[events];
@@ -14,9 +14,9 @@ module.exports = {
   },
   /**
    * Call a event handler and return the result
-   * @param {String|cc.Component.EventHandler} events 
+   * @param {String|cc.Component.EventHandler} events
    */
-  $callHandler(events, args = []) {
+  callHandler(events, args = []) {
     var e = events;
     if (typeof events === 'string') {
       e = this[events];
