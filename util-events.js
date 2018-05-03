@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   /**
    * Helper function to emit events
    * @param {String|cc.Component.EventHanlder} events
@@ -30,4 +30,4 @@ module.exports = {
     }
     return result;
   }
-}
+};
