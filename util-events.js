@@ -22,7 +22,7 @@ export default {
       e = this[events];
     }
     var result;
-    if (typeof e !== 'undefined') {
+    if (e && e.target) {
       const target = e.target;
       const comp = target.getComponent(e.component);
       const handler = comp[e.handler];
