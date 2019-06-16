@@ -24,7 +24,7 @@ export default {
     var result;
     if (e && e.target) {
       const target = e.target;
-      const comp = target.getComponent(e.component);
+      const comp = target.getComponent(e._componentName || e.component);
       const handler = comp[e.handler];
       result = handler.apply(comp, args);
     }
